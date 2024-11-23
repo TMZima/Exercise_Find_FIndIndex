@@ -6,3 +6,10 @@ const mythicalCreatures = [
   { name: "Griffin", type: "Air", lastSeen: "Highwind Mountains" },
   { name: "Kraken", type: "Water", lastSeen: "Abyssal Depths" },
 ];
+
+// Task 1: Use the 'find' method to locate the first creature of the 'Water' type and log its name to the console.
+mythicalCreatures.find((creature) => {
+  if (creature.type === "Water") {
+    console.log(creature.name);
+  }
+});
